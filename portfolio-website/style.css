@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ededed;
+    background: #081b29;
+
+}
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100;
+    padding: 20px 10%;
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    color: none;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 18;
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+.navbar a:hover {
+    color: 	#0000ff;
+}
+.home {
+    background: #081b29;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+.home-content {
+    
+    max-width: 600px;
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3 {
+    color: #00abf0;
+    font-size: 32px;
+    font-weight: 700px;
+}
+.home-content p {
+    font-size: 16px;
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 345;
+    height: 50;
+}
+.btn-box a{
+    position: relative;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    text-shadow: #00abf0;
+    border-radius: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: normal;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box:hover{
+    color: #00abf0;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+    
+}
+.btn-box a:nth-child(2)::before {
+background: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+color: #081b29;
+}
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .9s;
+}
+.btn-box a:hover::before {
+    width: 100%;
+
+
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: #00abf0;
+    transition: .5s;
+}
+.home-sci a:hover::before {
+    width: 100%;
+ }
+.home-sci:hover {
+    color: #081b29;
+}
+.homeimgHover {
+    position: absolute;
+    top: 90px;
+    left: 900px;
+    width: 100px;
+    height: 1px;
+    background: transparent;
+    background-color: 2px solid rebeccapurple;
+
+}
+.homeimgHover:hover {
+    background: yellowgreen;
+}
+.resume {
+    padding: 40px 100px;
+    text-decoration: none;
+    border: rgb(23, 58, 49) 1px solid;
+    border-radius: 33px;
+    color: #00abf0;
+    position: absolute;
+    
+
+}
